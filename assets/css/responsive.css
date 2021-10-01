@@ -1,0 +1,93 @@
+/* responsive pc */
+@media (min-width:1024px) {
+
+}
+
+/* responsive tablet và mobile */
+@media (max-width:1023px){
+    .btn{
+        width: 100%;
+        padding: 14px;
+    }
+
+    .ticket-body p,
+    .ticket-body h3 {
+        font-size: 17px;
+    }
+
+    .input-info{
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .footer-icon {
+        font-size: 28px;
+    }
+}
+
+/* responsive tablet */
+@media (min-width:740px) and (max-width:1023px){
+
+}
+/* responsive mobile */
+@media (max-width:739px) {
+    .column-two,
+    .column-three{
+        width: 100%;
+    }
+
+    .content-member .img-member {
+        width: 65%;
+    }
+
+    #Header{
+        overflow: hidden;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #nav .subnav{
+        position: inherit;
+    }
+
+    #nav .subnav li a {
+        color: #fff;
+        padding: 4px 32px;
+        background-color: #333;
+    }
+
+    #nav #menu-btn{
+        display: block;
+    }
+
+    #nav #search-btt {
+        display: none;
+    }
+
+    #Slider .slider-box{
+        bottom: 16px;
+    }
+
+    #Slider .slider-text{
+        bottom: 24px;
+        font-size: 14px;
+    }
+
+    #Slider .slider-header{
+        margin-bottom: 0;
+    }
+
+    .ticket-place{
+        margin-top: 24px;
+    }
+
+    #tour-dates .buy-ticket {
+        margin: 48px auto 0px;
+    }
+
+    .contact-container form{
+        margin-top: 16px;
+    }
+}
