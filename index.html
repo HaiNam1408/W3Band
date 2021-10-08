@@ -63,7 +63,6 @@
                 </div>
             </div>
        </div>
-    
         <div id="Content">
             <!-- phần band -->
             <div id="Band" class="the-band center-alige">
@@ -201,9 +200,6 @@
     </div>
 
     <script>
-        
-        
-
         // <--mobile menu script-->
         var menuBtn = document.getElementById('menu-btn');
         var header = document.getElementById('Header');
@@ -211,7 +207,6 @@
         var subNav = document.getElementsByClassName('js-sub-nav');
         var navBtns = document.querySelectorAll('.js-nav-btn');
         var screen = document.getElementById('main');
-
         // đóng mở menu
         menuBtn.onclick = function () {
             var menuClose = header.clientHeight === heightHeader;
@@ -237,8 +232,6 @@
         header.addEventListener('click',function (event) {
             event.stopPropagation()
         })  
-
-
     // <!-- đóng mở phần modal -->
         const BuyBtns = document.querySelectorAll('.js-buy-ticket-btn')
         const modalBuyticket = document.querySelector('.js-modal-buy-ticket')
@@ -264,7 +257,6 @@
         modalContainer.addEventListener('click',function (event) {
             event.stopPropagation()
         })      
-
         // <--slide script-->
         window.onload = showSlides;
         var index = -1;

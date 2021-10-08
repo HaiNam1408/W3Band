@@ -63,6 +63,7 @@ html{
 .btn{
     display: inline-block;
     font-size: 15px;
+    min-width: 112px;
     text-decoration: none;
     background-color: #000;
     color: #fff;
@@ -75,6 +76,7 @@ html{
 .btn:hover{
     color: #000;
     background-color: #ccc;
+    transition: all 0.2s;
 }
 
 /* Phần header */
@@ -92,6 +94,7 @@ html{
     color: white;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 #nav > li:first-child {
@@ -100,11 +103,13 @@ html{
 
 #nav .subnav li:hover a {
     background-color: #ccc;
+    transition: all 0.2s;
 }
 
 #nav>li:hover>a {
     color: #000;
     background-color: #ccc;
+    transition: all 0.2s;
 }
 
 #nav li a{
@@ -266,6 +271,7 @@ html{
 
 .ticket-img:hover{
     opacity: 0.6;
+    transition: opacity 0.2s;
 }
 
 .ticket-heading{
@@ -338,6 +344,8 @@ html{
 
 .footer-icon > i:hover{
     opacity: 0.4;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 .footer-the-end, .footer-facebook{
