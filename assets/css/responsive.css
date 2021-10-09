@@ -27,7 +27,12 @@
 
 /* responsive tablet */
 @media (min-width:740px) and (max-width:1023px){
-
+    .modal-buy-ticket{
+        padding: 200px 0 0;
+    }
+    #search-input {
+        max-width: 132px;
+}
 }
 /* responsive mobile */
 @media (max-width:739px) {

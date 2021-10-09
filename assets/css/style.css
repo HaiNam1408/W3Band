@@ -106,7 +106,7 @@ html{
     transition: all 0.2s;
 }
 
-#nav>li:hover>a {
+#nav a:hover {
     color: #000;
     background-color: #ccc;
     transition: all 0.2s;
@@ -153,8 +153,30 @@ html{
 }
 
 #nav #search-btt{
+    display: flex;
+    flex-direction: row-reverse;
     float: right;
 }
+
+.search-box{
+    display: none;
+    background-color: #fff;
+    height: 32px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+#search-input{
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    animation: FadeSearch ease 0.5s;
+}
+
+#open-search:checked ~ .search-box{
+    display: flex;
+} 
+
 /* Phần slider */
 #Slider {
     position: relative;
@@ -363,7 +385,7 @@ html{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 100px 0 0 ;
+    padding: 72px 0 0 ;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -446,5 +468,17 @@ from{
 to{
     opacity: 1;
     transform: translateY(0px);
+}
+}
+
+@keyframes FadeSearch {
+from{
+    width: 0;
+    opacity: 0;
+}   
+
+to{
+    width: 148px;
+    opacity: 1;
 }
 }
